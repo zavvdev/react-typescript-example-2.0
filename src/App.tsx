@@ -1,19 +1,15 @@
+import 'i18n';
 import 'styles/index.css';
-import Button from 'components/Button/Button';
 import { ThemeProvider } from 'react-jss';
 import { useAppTheme } from 'styles/hooks/useAppTheme';
+import Home from 'pages/Home/Home';
 
 function App() {
   const appTheme = useAppTheme();
 
   return (
     <ThemeProvider theme={appTheme}>
-      <div>
-        Hello, World!
-        <Button>
-          Button
-        </Button>
-      </div>
+      <Home />
     </ThemeProvider>
   );
 }
