@@ -56,5 +56,6 @@
     "no-restricted-imports": ["error", {
       "patterns": [".*"]
     }]
-  }
+  },
+  "ignorePatterns": ["build/"]
 }
