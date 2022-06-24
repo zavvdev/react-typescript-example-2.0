@@ -1,14 +1,20 @@
+import 'styles/index.css';
 import Button from 'components/Button/Button';
+import { ThemeProvider } from 'react-jss';
+import { useAppTheme } from 'styles/hooks/useAppTheme';
 
 function App() {
-  // eslint-disable-next-line
-  console.log(process.env.REACT_APP_API_ENDPOINT);
+  const appTheme = useAppTheme();
 
   return (
-    <div>
-      Hello, World!
-      <Button />
-    </div>
+    <ThemeProvider theme={appTheme}>
+      <div>
+        Hello, World!
+        <Button>
+          Button
+        </Button>
+      </div>
+    </ThemeProvider>
   );
 }
 
