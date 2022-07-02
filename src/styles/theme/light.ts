@@ -1,5 +1,5 @@
-import { AppTheme } from 'styles/theme/types/theme';
-import { appPalette } from 'styles/theme/palette';
+import { AppTheme } from "styles/theme/types/theme";
+import { appPalette } from "styles/theme/palette";
 
 const appLightTheme: AppTheme = {
   palette: appPalette,

@@ -1,8 +1,8 @@
-import { Namespace } from 'i18n/namespace';
-import { useTranslation } from 'react-i18next';
-import logo from 'assets/images/Logo.svg';
-import LanguageSwitch from 'components/Header/components/LanguageSwitch/LanguageSwitch';
-import { useHeaderStyles } from 'components/Header/Header.styles';
+import { Namespace } from "i18n/namespace";
+import { useTranslation } from "react-i18next";
+import logo from "assets/images/Logo.svg";
+import { LanguageSwitch } from "components/Header/components/LanguageSwitch/LanguageSwitch";
+import { useHeaderStyles } from "components/Header/Header.styles";
 
 function Header() {
   const classes = useHeaderStyles();
@@ -10,10 +10,10 @@ function Header() {
 
   return (
     <header className={classes.root}>
-      <img src={logo} className={classes.logo} alt={t('appName')} />
+      <img src={logo} className={classes.logo} alt={t("appName")} />
       <LanguageSwitch />
     </header>
   );
 }
 
-export default Header;
+export { Header };

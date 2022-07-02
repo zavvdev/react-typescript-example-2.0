@@ -50,6 +50,8 @@
     }
   },
   "rules": {
+    "@typescript-eslint/quotes": ["error", "double"],
+    "import/no-default-export": "error",
     "react/react-in-jsx-scope": "off",
     "import/prefer-default-export": "off",
     "max-len": [2, {

@@ -1,40 +1,40 @@
-import { createAppUseStyles } from 'styles/hooks/createAppUseStyles';
+import { createAppUseStyles } from "styles/hooks/createAppUseStyles";
 
 const useButtonStyles = createAppUseStyles((theme) => ({
   root: {
     backgroundColor: theme.palette.primary.main,
-    border: 'none',
+    border: "none",
     color: theme.palette.white.main,
-    padding: '10px 20px',
-    fontSize: '20px',
+    padding: "10px 20px",
+    fontSize: "20px",
     fontWeight: 500,
-    borderRadius: '5px',
-    cursor: 'pointer',
-    userSelect: 'none',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    textDecoration: 'none',
-    width: 'max-content',
+    borderRadius: "5px",
+    cursor: "pointer",
+    userSelect: "none",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    textDecoration: "none",
+    width: "max-content",
 
-    '&:hover': {
+    "&:hover": {
       backgroundColor: theme.palette.primary.dark,
     },
   },
 
   icon: {
-    marginRight: '10px',
+    marginRight: "10px",
     fill: theme.palette.white.main,
-    width: '25px',
-    display: 'flex',
-    alignItems: 'center',
-    marginLeft: '-3px',
+    width: "25px",
+    display: "flex",
+    alignItems: "center",
+    marginLeft: "-3px",
   },
 
   disabled: {
-    cursor: 'default',
-    pointerEvents: 'none',
-    backgroundColor: 'green',
+    cursor: "default",
+    pointerEvents: "none",
+    backgroundColor: "green",
   },
 }));
 

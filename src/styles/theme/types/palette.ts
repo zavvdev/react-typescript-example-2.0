@@ -1,4 +1,4 @@
-import { ColorType } from 'styles/theme/types/common';
+import { ColorType } from "styles/theme/types/common";
 
 interface AppPalette {
   primary: {

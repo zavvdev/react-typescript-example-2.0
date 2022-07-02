@@ -1,23 +1,23 @@
-import i18n from 'i18next';
-import LanguageDetector from 'i18next-browser-languagedetector';
-import { initReactI18next } from 'react-i18next';
-import enLocales from 'i18n/locales/en';
-import ukLocales from 'i18n/locales/uk';
+import i18n from "i18next";
+import LanguageDetector from "i18next-browser-languagedetector";
+import { initReactI18next } from "react-i18next";
+import { en } from "i18n/locales/en";
+import { uk } from "i18n/locales/uk";
 import {
   APP_DEFAULT_LANGUAGE,
   APP_LANGUAGES,
   I18N_LOCAL_STORAGE_KEY,
-} from 'i18n/config';
+} from "i18n/config";
 
 const resources = {
-  [APP_LANGUAGES.en]: enLocales,
-  [APP_LANGUAGES.uk]: ukLocales,
+  [APP_LANGUAGES.en]: en,
+  [APP_LANGUAGES.uk]: uk,
 };
 
 const languageDetector = new LanguageDetector();
 
 languageDetector.addDetector({
-  name: 'languageDetector',
+  name: "languageDetector",
   lookup() {
     let appLanguage = APP_DEFAULT_LANGUAGE;
 
@@ -49,8 +49,8 @@ i18n
       useSuspense: true,
     },
     detection: {
-      order: ['languageDetector', 'localStorage'],
+      order: ["languageDetector", "localStorage"],
     },
   });
 
-export default i18n;
+export { i18n };

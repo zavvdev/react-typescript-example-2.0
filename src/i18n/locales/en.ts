@@ -1,7 +1,7 @@
-import { Namespace } from 'i18n/namespace';
-import common from 'i18n/locales/common/en.json';
-import home from 'i18n/locales/home/en.json';
-import notFound from 'i18n/locales/notFound/en.json';
+import { Namespace } from "i18n/namespace";
+import common from "i18n/locales/common/en.json";
+import home from "i18n/locales/home/en.json";
+import notFound from "i18n/locales/notFound/en.json";
 
 const en = {
   [Namespace.Common]: common,
@@ -9,4 +9,4 @@ const en = {
   [Namespace.NotFound]: notFound,
 };
 
-export default en;
+export { en };

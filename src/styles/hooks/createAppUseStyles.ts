@@ -1,6 +1,6 @@
-import { createUseStyles, Styles, Theming } from 'react-jss';
-import { StyleSheetFactoryOptions } from 'jss';
-import { AppTheme } from 'styles/theme/types/theme';
+import { createUseStyles, Styles, Theming } from "react-jss";
+import { StyleSheetFactoryOptions } from "jss";
+import { AppTheme } from "styles/theme/types/theme";
 
 interface BaseOptions<Theme = AppTheme> extends StyleSheetFactoryOptions {
   index?: number

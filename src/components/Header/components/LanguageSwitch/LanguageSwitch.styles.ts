@@ -1,23 +1,23 @@
-import { createAppUseStyles } from 'styles/hooks/createAppUseStyles';
+import { createAppUseStyles } from "styles/hooks/createAppUseStyles";
 
 const useLanguageSwitchStyles = createAppUseStyles((theme) => ({
   root: {
-    display: 'flex',
-    alignItems: 'center',
+    display: "flex",
+    alignItems: "center",
   },
 
   langWrap: {
-    '& span': {
-      cursor: 'pointer',
+    "& span": {
+      cursor: "pointer",
     },
   },
 
   lang: {
-    cursor: 'pointer',
-    border: 'none',
-    background: 'none',
-    textTransform: 'uppercase',
-    padding: '10px',
+    cursor: "pointer",
+    border: "none",
+    background: "none",
+    textTransform: "uppercase",
+    padding: "10px",
   },
 
   active: {

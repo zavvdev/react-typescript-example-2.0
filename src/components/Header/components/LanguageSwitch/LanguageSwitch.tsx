@@ -1,7 +1,7 @@
-import cx from 'clsx';
-import { APP_LANGUAGES } from 'i18n/config';
-import { useTranslation } from 'react-i18next';
-import { useLanguageSwitchStyles } from 'components/Header/components/LanguageSwitch/LanguageSwitch.styles';
+import cx from "clsx";
+import { APP_LANGUAGES } from "i18n/config";
+import { useTranslation } from "react-i18next";
+import { useLanguageSwitchStyles } from "components/Header/components/LanguageSwitch/LanguageSwitch.styles";
 
 function LanguageSwitch() {
   const { i18n } = useTranslation();
@@ -32,4 +32,4 @@ function LanguageSwitch() {
   );
 }
 
-export default LanguageSwitch;
+export { LanguageSwitch };

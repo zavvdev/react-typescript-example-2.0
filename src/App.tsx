@@ -1,8 +1,8 @@
-import 'i18n';
-import 'styles/index.css';
-import { ThemeProvider } from 'react-jss';
-import { useAppTheme } from 'styles/hooks/useAppTheme';
-import Home from 'pages/Home/Home';
+import "i18n";
+import "styles/index.css";
+import { ThemeProvider } from "react-jss";
+import { useAppTheme } from "styles/hooks/useAppTheme";
+import { Home } from "pages/Home/Home";
 
 function App() {
   const appTheme = useAppTheme();
@@ -14,4 +14,4 @@ function App() {
   );
 }
 
-export default App;
+export { App };
