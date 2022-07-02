@@ -1,3 +1,3 @@
-export const generalRoutes = {
+export const GENERAL_ROUTES = {
   home: "/",
 };

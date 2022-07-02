@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home } from "pages/Home/Home";
 import { NotFound } from "pages/NotFound/NotFound";
-import { generalRoutes } from "router/config/routes/generalRoutes";
+import { GENERAL_ROUTES } from "router/config/routes/generalRoutes";
 
 export function Router() {
   return (
@@ -10,7 +10,7 @@ export function Router() {
 
         {/* General Routes */}
 
-        <Route path={generalRoutes.home} element={<Home />} />
+        <Route path={GENERAL_ROUTES.home} element={<Home />} />
 
         {/* --------- */}
 

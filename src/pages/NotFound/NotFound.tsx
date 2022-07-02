@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Button } from "components/Button/Button";
 import { Namespace } from "i18n/namespace";
 import { useNotFoundStyles } from "pages/NotFound/NotFound.styles";
-import { generalRoutes } from "router/config/routes/generalRoutes";
+import { GENERAL_ROUTES } from "router/config/routes/generalRoutes";
 
 export function NotFound() {
   const classes = useNotFoundStyles();
@@ -11,7 +11,7 @@ export function NotFound() {
   const { t } = useTranslation(Namespace.NotFound);
 
   const handleHomeClick = () => {
-    navigate(generalRoutes.home, {
+    navigate(GENERAL_ROUTES.home, {
       replace: true,
     });
   };
