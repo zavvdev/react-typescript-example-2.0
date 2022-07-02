@@ -99,6 +99,11 @@
           "position": "before"
         },
         { 
+          "pattern": "router/**", 
+          "group": "internal",
+          "position": "before"
+        },
+        { 
           "pattern": "store/**", 
           "group": "internal",
           "position": "before"
