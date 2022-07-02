@@ -1,7 +1,7 @@
 import cx from "clsx";
-import { APP_LANGUAGES } from "i18n/config";
 import { useTranslation } from "react-i18next";
 import { useLanguageSwitchStyles } from "components/Header/components/LanguageSwitch/LanguageSwitch.styles";
+import { APP_LANGUAGES } from "i18n/config";
 
 export function LanguageSwitch() {
   const { i18n } = useTranslation();

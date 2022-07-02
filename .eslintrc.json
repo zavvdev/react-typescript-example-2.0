@@ -51,6 +51,70 @@
     }
   },
   "rules": {
+    "sort-imports": ["error", {
+      "ignoreCase": true,
+      "ignoreDeclarationSort": true
+    }],
+    "import/order": ["error", {
+      "groups": [
+        "builtin",
+        "external", 
+        "type",
+        "internal"
+      ],
+      "pathGroups": [
+        { 
+          "pattern": "assets/**", 
+          "group": "internal", 
+          "position": "before" 
+        },
+        { 
+          "pattern": "components/**", 
+          "group": "internal",
+          "position": "before"
+        }, 
+        { 
+          "pattern": "config/**", 
+          "group": "internal",
+          "position": "before"
+        }, 
+        { 
+          "pattern": "hooks/**", 
+          "group": "internal",
+          "position": "before"
+        }, 
+        { 
+          "pattern": "i18n/**", 
+          "group": "internal",
+          "position": "before"
+        },
+        { 
+          "pattern": "layouts/**", 
+          "group": "internal",
+          "position": "before"
+        },
+        { 
+          "pattern": "pages/**", 
+          "group": "internal",
+          "position": "before"
+        },
+        { 
+          "pattern": "store/**", 
+          "group": "internal",
+          "position": "before"
+        },
+        { 
+          "pattern": "styles/**", 
+          "group": "internal",
+          "position": "before"
+        },
+        { 
+          "pattern": "utils/**", 
+          "group": "internal",
+          "position": "before"
+        }
+      ]
+    }],
     "@typescript-eslint/quotes": ["error", "double"],
     "@typescript-eslint/no-unused-vars": "error",
     "import/no-default-export": "error",
