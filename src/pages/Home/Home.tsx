@@ -3,6 +3,7 @@ import { Namespace } from "i18n/namespace";
 import { MainLayout } from "layouts/MainLayout/MainLayout";
 import { useTranslation } from "react-i18next";
 import { useHomeStyles } from "pages/Home/Home.styles";
+import { ExternalLinkIcon } from "components/svgIcons/ExternalLinkIcon";
 
 export function Home() {
   const { t } = useTranslation([Namespace.Home, Namespace.Common]);
@@ -17,7 +18,7 @@ export function Home() {
           <Button
             target="_blank"
             href={t(`${Namespace.Common}:links.repository`)}
-            // icon={<GitHubIcon />}
+            icon={<ExternalLinkIcon />}
           >
             {t("buttons.repository")}
           </Button>
