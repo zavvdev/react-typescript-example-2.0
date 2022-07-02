@@ -1,4 +1,4 @@
-import { createAppUseStyles } from "styles/hooks/createAppUseStyles";
+import { createAppUseStyles } from "styles/utils/createAppUseStyles";
 
 const useMainLayoutStyles = createAppUseStyles({
   root: {

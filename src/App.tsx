@@ -1,7 +1,7 @@
 import "i18n";
 import "styles/index.css";
 import { ThemeProvider } from "react-jss";
-import { useAppTheme } from "styles/hooks/useAppTheme";
+import { useAppTheme } from "styles/theme/hooks/useAppTheme";
 import { Home } from "pages/Home/Home";
 
 export function App() {
