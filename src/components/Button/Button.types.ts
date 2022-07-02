@@ -1,6 +1,6 @@
 import { ButtonHTMLAttributes, DetailedHTMLProps, ReactNode } from "react";
 
-export interface ButtonProps extends DetailedHTMLProps<
+interface ButtonProps extends DetailedHTMLProps<
 ButtonHTMLAttributes<HTMLButtonElement>,
 HTMLButtonElement
 > {
@@ -9,3 +9,5 @@ HTMLButtonElement
   target?: "_blank";
   icon?: ReactNode;
 }
+
+export type { ButtonProps };

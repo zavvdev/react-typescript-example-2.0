@@ -2,7 +2,7 @@ import { Header } from "components/Header/Header";
 import { MainLayoutProps } from "layouts/MainLayout/MainLayout.types";
 import { useMainLayoutStyles } from "layouts/MainLayout/MainLayout.styles";
 
-function MainLayout(props: MainLayoutProps) {
+export function MainLayout(props: MainLayoutProps) {
   const { children } = props;
 
   const classes = useMainLayoutStyles();
@@ -16,5 +16,3 @@ function MainLayout(props: MainLayoutProps) {
     </div>
   );
 }
-
-export { MainLayout };

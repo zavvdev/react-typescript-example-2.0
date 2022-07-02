@@ -2,7 +2,7 @@ import cx from "clsx";
 import { ButtonProps } from "components/Button/Button.types";
 import { useButtonStyles } from "components/Button/Button.styles";
 
-function Button(props: ButtonProps) {
+export function Button(props: ButtonProps) {
   const {
     children,
     className,
@@ -51,5 +51,3 @@ function Button(props: ButtonProps) {
     </button>
   );
 }
-
-export { Button };

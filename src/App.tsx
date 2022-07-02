@@ -4,7 +4,7 @@ import { ThemeProvider } from "react-jss";
 import { useAppTheme } from "styles/hooks/useAppTheme";
 import { Home } from "pages/Home/Home";
 
-function App() {
+export function App() {
   const appTheme = useAppTheme();
 
   return (
@@ -13,5 +13,3 @@ function App() {
     </ThemeProvider>
   );
 }
-
-export { App };

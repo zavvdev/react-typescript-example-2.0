@@ -4,7 +4,7 @@ import logo from "assets/images/Logo.svg";
 import { LanguageSwitch } from "components/Header/components/LanguageSwitch/LanguageSwitch";
 import { useHeaderStyles } from "components/Header/Header.styles";
 
-function Header() {
+export function Header() {
   const classes = useHeaderStyles();
   const { t } = useTranslation(Namespace.Common);
 
@@ -15,5 +15,3 @@ function Header() {
     </header>
   );
 }
-
-export { Header };

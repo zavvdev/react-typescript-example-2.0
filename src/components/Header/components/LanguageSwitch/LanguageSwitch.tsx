@@ -3,7 +3,7 @@ import { APP_LANGUAGES } from "i18n/config";
 import { useTranslation } from "react-i18next";
 import { useLanguageSwitchStyles } from "components/Header/components/LanguageSwitch/LanguageSwitch.styles";
 
-function LanguageSwitch() {
+export function LanguageSwitch() {
   const { i18n } = useTranslation();
   const classes = useLanguageSwitchStyles();
   const languages = Object.values(APP_LANGUAGES);
@@ -31,5 +31,3 @@ function LanguageSwitch() {
     </div>
   );
 }
-
-export { LanguageSwitch };

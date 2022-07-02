@@ -1,7 +1,5 @@
-enum Namespace {
+export enum Namespace {
   Common = "common",
   Home = "home",
   NotFound = "notFound",
 }
-
-export { Namespace };

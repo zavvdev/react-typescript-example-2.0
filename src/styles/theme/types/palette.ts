@@ -1,6 +1,6 @@
 import { ColorType } from "styles/theme/types/common";
 
-interface AppPalette {
+export interface AppPalette {
   primary: {
     main: ColorType;
     dark: ColorType;
@@ -17,5 +17,3 @@ interface AppPalette {
     main: ColorType;
   }
 }
-
-export type { AppPalette };

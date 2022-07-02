@@ -4,7 +4,7 @@ import { MainLayout } from "layouts/MainLayout/MainLayout";
 import { useTranslation } from "react-i18next";
 import { useHomeStyles } from "pages/Home/Home.styles";
 
-function Home() {
+export function Home() {
   const { t } = useTranslation([Namespace.Home, Namespace.Common]);
   const classes = useHomeStyles();
 
@@ -27,5 +27,3 @@ function Home() {
     </MainLayout>
   );
 }
-
-export { Home };

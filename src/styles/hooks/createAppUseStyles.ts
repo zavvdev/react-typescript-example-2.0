@@ -13,7 +13,7 @@ Theme = AppTheme,
   name?: string
 }
 
-function createAppUseStyles<
+export function createAppUseStyles<
   C extends string = string, Props = unknown, Theme = AppTheme,
 >(
   styles: Styles<C, Props, Theme>
@@ -22,5 +22,3 @@ function createAppUseStyles<
 ) {
   return createUseStyles(styles, options);
 }
-
-export { createAppUseStyles };

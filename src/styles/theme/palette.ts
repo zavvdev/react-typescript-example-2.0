@@ -1,6 +1,6 @@
 import { AppPalette } from "styles/theme/types/palette";
 
-const appPalette: AppPalette = {
+export const appPalette: AppPalette = {
   primary: {
     main: "#0293FF",
     dark: "#0E75C1",
@@ -17,5 +17,3 @@ const appPalette: AppPalette = {
     main: "#ffffff",
   },
 };
-
-export { appPalette };
