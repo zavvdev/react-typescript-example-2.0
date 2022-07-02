@@ -1,25 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import 'i18n';
+import 'styles/index.css';
+import { ThemeProvider } from 'react-jss';
+import { useAppTheme } from 'styles/hooks/useAppTheme';
+import Home from 'pages/Home/Home';
 
 function App() {
+  const appTheme = useAppTheme();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={appTheme}>
+      <Home />
+    </ThemeProvider>
   );
 }
 

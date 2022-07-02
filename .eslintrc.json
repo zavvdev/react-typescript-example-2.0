@@ -1,0 +1,68 @@
+{
+  "env": {
+    "es6": true,
+    "node": true,
+    "browser": true,
+    "jest/globals": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint",
+    "react",
+    "jest",
+    "testing-library"
+  ],
+  "extends": [
+    "airbnb",
+    "airbnb/hooks",
+    "airbnb-typescript",
+    "plugin:react/recommended",
+    "plugin:import/recommended",
+    "plugin:import/typescript",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "src/**/?(*.)+(spec|test).ts?(x)"
+      ],
+      "extends": [
+        "plugin:testing-library/react",
+        "plugin:jest/recommended"
+      ]
+    }
+  ],
+  "parserOptions": {
+    "project": ["./tsconfig.json"]
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "jest": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true,
+        "project": "./tsconfig.json"
+      }
+    }
+  },
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "import/prefer-default-export": "off",
+    "max-len": [2, {
+      "code": 80,
+      "ignorePattern": "^import"
+    }],
+    "react/function-component-definition": [2, {
+      "namedComponents": "function-declaration"
+    }],
+    "no-restricted-imports": ["error", {
+      "patterns": [".*"]
+    }],
+    "arrow-body-style": "off"
+  },
+  "ignorePatterns": ["build/"]
+}
