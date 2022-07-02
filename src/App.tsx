@@ -1,7 +1,7 @@
 import "i18n";
 import "styles/index.css";
 import { ThemeProvider } from "react-jss";
-import { Home } from "pages/Home/Home";
+import { Router } from "router/Router";
 import { useAppTheme } from "styles/theme/hooks/useAppTheme";
 
 export function App() {
@@ -9,7 +9,7 @@ export function App() {
 
   return (
     <ThemeProvider theme={appTheme}>
-      <Home />
+      <Router />
     </ThemeProvider>
   );
 }

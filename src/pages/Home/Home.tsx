@@ -22,7 +22,6 @@ export function Home() {
           >
             {t("buttons.repository")}
           </Button>
-          {/* <Likes /> */}
         </div>
       </div>
     </MainLayout>
